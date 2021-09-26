@@ -1,12 +1,11 @@
 // Importing partials the name of the file must begin with an underscore
-
-@import "./globalreset";
-@import "./variables";
-@import "./mixins";
-@import "./header";
-@import "./footer";
+// @import "./variables"; old way of importing, deprecated.
+@use "variables";
+@use "./header";
+@use "./globalreset";
+@use "./footer";
 
 * {
   @extend *; //from globalreset
-  font-size: $fontSize;
+  font-size: variables.$fontSize;
 }

@@ -1,3 +1,5 @@
+@use "header";
+
 main {
   @extend header; // inherits all from header
   // anything below will override the inherited things

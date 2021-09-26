@@ -1,17 +1,20 @@
+@use "variables" as var; // bring in namespaced module and rename as var
+@use "mixins"; // bring in module
+
 header {
   min-height: 100vh;
-  background-color: $bgColor;
+  background-color: var.$bgColor;
   // mixin for center items
-  @include flexCenter(); //THIS IS HOW U USE MIXINS
+  @include mixins.flexCenter(); //THIS IS HOW U USE MIXINS
 
   button {
-    background-color: $btnBg;
+    background-color: var.$btnBg;
     padding: 4vh;
     border: none;
     border-radius: 10px;
-    // USE & for : or :: usage withing elements
+    // USE `&:hover` instead of `button:hover` , &just adds to the current selector
     &:hover {
-      background-color: $btnHoverBg;
+      background-color: var.$btnHoverBg;
     }
   }
 }

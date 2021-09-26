@@ -1,9 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 header, main {
   min-height: 100vh;
   background-color: #9fd4ed;
@@ -22,6 +16,12 @@ header button:hover, main button:hover {
   background-color: #ffffff;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 main {
   background-color: goldenrod;
 }
@@ -30,9 +30,6 @@ main button {
 }
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
   font-size: 24px;
 }
 
