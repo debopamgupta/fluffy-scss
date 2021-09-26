@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header, main {
+  min-height: 100vh;
+  background-color: #9fd4ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+header button, main button {
+  background-color: #165877;
+  padding: 4vh;
+  border: none;
+  border-radius: 10px;
+}
+header button:hover, main button:hover {
+  background-color: #ffffff;
+}
+
+main {
+  background-color: goldenrod;
+}
+main button {
+  background-color: blueviolet;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 24px;
+}
+
+/*# sourceMappingURL=main.css.map */

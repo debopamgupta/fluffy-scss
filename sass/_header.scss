@@ -1,0 +1,17 @@
+header {
+  min-height: 100vh;
+  background-color: $bgColor;
+  // mixin for center items
+  @include flexCenter(); //THIS IS HOW U USE MIXINS
+
+  button {
+    background-color: $btnBg;
+    padding: 4vh;
+    border: none;
+    border-radius: 10px;
+    // USE & for : or :: usage withing elements
+    &:hover {
+      background-color: $btnHoverBg;
+    }
+  }
+}

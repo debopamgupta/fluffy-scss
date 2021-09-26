@@ -1,0 +1,9 @@
+// A mixin is just like a function
+// can have values passed on and used like that
+// can set default values if none is passed like shown below
+@mixin flexCenter($direction: row) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}

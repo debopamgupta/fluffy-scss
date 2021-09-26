@@ -1,0 +1,8 @@
+main {
+  @extend header; // inherits all from header
+  // anything below will override the inherited things
+  background-color: goldenrod; // overwrote the bgcolor
+  button {
+    background-color: blueviolet; //overwrote the button color, but the button styles like border are inherited
+  }
+}
